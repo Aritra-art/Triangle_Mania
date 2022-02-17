@@ -7,7 +7,44 @@
 }
 
 body{
+  margin: 0rem;
   font-family: 'Offside', cursive;
+}
+
+.nav-bar{
+  
+  width: 100%;
+  height: 17vh;
+  background-color: var(--primary-color);
+  border-bottom-left-radius: 1rem;
+}
+.nav-pills{
+  list-style: none;
+  text-align: right;
+}
+.nav-pill-items{
+  font-size: 1.1rem;
+  display:inline;
+  font-weight: bold;
+  padding: 0rem 0.8rem 1rem 0rem;
+}
+.link{
+  padding: 0rem 1rem 1rem 0rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.link-active{
+  text-decoration: underline;
+  font-size : 1.2rem
+}
+
+.nav-heading{
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  padding-left: 0.8rem;
+  font-weight: bold;
+  color: var(--secondary-color);
 }
 
 .container{
@@ -24,9 +61,23 @@ body{
   padding-bottom: 1rem;
 }
 
+.name-heading{
+  margin: auto;
+  padding: 1rem;
+  color: var(--secondary-color);
+}
+.heading-hypotenuse{
+  margin: auto;
+  padding-top: 2rem;
+  color: var(--secondary-color);
+  font-size: 2.6rem;
+  padding-bottom: 1rem;
+}
+
 label{
   margin: auto;
   padding: 1.2rem ;
+  padding-top: 2rem;
   color: var(--secondary-color);
   font-weight: bold;
   font-size: 1.4rem;
@@ -46,11 +97,32 @@ input:focus{
 }
 
 .button{
+  padding-bottom: 1rem;
   margin: auto;
   padding-top: 2rem;
 }
 
 .is-triangle{
+  padding: 1rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 0.8rem;
+}
+
+.hypotenuse{
+  padding: 1rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 0.8rem;
+}
+
+.area{
   padding: 1rem 0.8rem;
   font-size: 1.2rem;
   font-weight: bold;
@@ -73,16 +145,63 @@ input:focus{
 
 p{
   margin: auto;
-  padding-top: 2rem;
 }
 
 .error{
+  padding-top: 1.5rem;
   color: var(--error-color);
   font-style: italic;
 }
 
 .show{
+  padding-top: 1.5rem;
   color: var(--secondary-color);
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.footer{
+  margin-top: 9rem;
+  margin-right: 3rem;
+  width: 100%;
+  height: 22vh;
+  background-color: var(--primary-color);
+  border-top-right-radius: 1rem;
+}
+.footer-header{
+  text-align: center;
+  padding: 1.5rem 0rem 0rem ;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.footer-pills{
+  list-style: none;
+  text-align: center;
+}
+.footer-items{
+  display: inline;
+  padding: 0rem 2.6rem 0rem 0rem;
+}
+.privacy{
+  text-align: center;
+  color: var(--secondary-color);
+}
+.name{
+  color: var(--secondary-color);
+}
+
+.about{
+  padding: 1rem;
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+.section{
+  margin: auto;
+  margin-top: 4rem;
+  background-color: var(--primary-color);
+  height: 24rem;
+  border-radius: 0.8rem;
+  width: 70%;
 }

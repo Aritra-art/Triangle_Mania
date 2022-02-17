@@ -4,40 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area</title>
   <link rel="stylesheet" href="./style.css">
-  <title>IS TRIANGLE</title>
 </head>
 <body>
-
   <nav class="nav-bar">
     <div class ="nav-heading">
       <a class ="nav-heading" href="./index.html">Fun_With_Triangles</a>
     </div> 
     <ul class="nav-pills">
-      <li class="nav-pill-items"> <a class="link link-active" href="./IsTriangle.html" target="_blank">IS Triangle</a></li>
+      <li class="nav-pill-items"> <a class="link" href="./IsTriangle.html" target="_blank">IS Triangle</a></li>
       <li class="nav-pill-items"> <a class="link" href="./quiz.html" target="_blank">Quiz</a></li>
       <li class="nav-pill-items"> <a class="link" href="./hypotenuse.html" target="_blank">Hypotenuse</a></li>
-      <li class="nav-pill-items"> <a class="link " href="./area.html" target="_blank">Area</a></li>
+      <li class="nav-pill-items"> <a class="link link-active" href="./area.html" target="_blank">Area</a></li>
     </ul>
   </nav>
 
-  <div class="container">
-  <h1 class="heading">Angles of Triangles</h1>
-  
-  <label for="angle-one">Angle 1</label>
-  <input type="number" id="angle-one" placeholder="enter angle 1 (in degree)">
-  <label for="angle-two">Angle 2</label>
-  <input type="number" id="angle-two" placeholder="enter angle 2 (in degree)">
-  <label for="angle-three">Angle 3</label>
-  <input type="number" id="angle-three" placeholder="enter angle 3 (in degree)">
-  
-  <span class="button">
-  <button class="is-triangle">Is Triangle?</button>
-  <button class="clear">Clear</button>
-  </span> 
+<div class="container">
+  <h1 class="heading">Calculate Area</h1>
 
-  <p class="error"></p>
-  <p class="show"></p>
+  <label for="base">Enter Base Value 👇</label>
+    <input type="number" class="base" placeholder="enter base value (b)">
+    <label for="height">Enter Height Value 👇</label>
+    <input type="number" class="height" placeholder="enter height value (h)">
+
+    <span class="button">
+      <button class="area">Get Area</button>
+      <button class="clear">Clear</button>
+    </span>
+    <h2 class="name-heading">Area Formula</h2>
+    <h3 class="name-heading">1/2 (base * height)</h3> 
+    
+    <p class="error"></p>
+    <p class="show"></p>
 </div>
 
 <footer class="footer">
@@ -51,5 +50,5 @@
   <p class="privacy">© 2022 | <a class="name"href="https://aritraportfolio.netlify.app/" target="_blank">aritrachowdhury</a></p>
 </footer>
 </body>
-<script src="./IsTriangle.js"></script>
+<script src="./area.js"></script>
 </html>
