@@ -4,10 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./IsTriangle.css">
+  <link rel="stylesheet" href="./style.css">
   <title>IS TRIANGLE</title>
 </head>
 <body>
+  <div class="container">
+  <h1 class="heading">Angles of Triangles</h1>
   
+  <label for="angle-one">Angle 1</label>
+  <input type="number" id="angle-one" placeholder="enter angle 1 (in degree)">
+  <label for="angle-two">Angle 2</label>
+  <input type="number" id="angle-two" placeholder="enter angle 2 (in degree)">
+  <label for="angle-three">Angle 3</label>
+  <input type="number" id="angle-three" placeholder="enter angle 3 (in degree)">
+  
+  <span class="button">
+  <button class="is-triangle">Is Triangle?</button>
+  <button class="clear">Clear</button>
+  </span> 
+
+  <p class="error"></p>
+  <p class="show"></p>
+</div>
 </body>
+<script src="./IsTriangle.js"></script>
 </html>
