@@ -192,16 +192,13 @@ p{
   color: var(--secondary-color);
 }
 
-.about{
-  padding: 1rem;
-  color: var(--secondary-color);
-  font-size: 1.1rem;
-}
 .section{
+  font-size: 1.1rem;
+  padding:1rem;
   margin: auto;
-  margin-top: 4rem;
+  color: var(--secondary-color);
+  margin-top: 3.5rem;
   background-color: var(--primary-color);
-  height: 24rem;
-  border-radius: 0.8rem;
+  border-radius: 0.9rem;
   width: 70%;
 }
