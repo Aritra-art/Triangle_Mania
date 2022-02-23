@@ -61,81 +61,15 @@ body{
   padding-bottom: 1rem;
 }
 .sub-heading{
-  margin: auto;
+  display: block;
+  text-align: center;
   color: var(--secondary-color);
   font-size: 1.3rem;
-  padding-bottom: 1rem;
 }
 
-.name-heading{
-  margin: auto;
-  padding: 1rem;
-  color: var(--secondary-color);
-}
-.heading-hypotenuse{
-  margin: auto;
-  padding-top: 2rem;
-  color: var(--secondary-color);
-  font-size: 2.6rem;
-  padding-bottom: 1rem;
-}
-
-label{
-  margin: auto;
-  padding: 1.2rem ;
-  padding-top: 2rem;
-  color: var(--secondary-color);
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-
-input{
-  padding: 12px 20px;
-  margin: auto;
-  width: 70%;
-  font-size: 1.1rem;
-  border-radius: 0.8rem;
-  border: 2px solid var(--primary-color);
-}
-
-input:focus{
-  outline: 1px solid var(--primary-color);
-}
-
-.button{
-  padding-bottom: 1rem;
-  margin: auto;
-  padding-top: 2rem;
-}
-
-.is-triangle{
-  padding: 1rem 0.8rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 0.8rem;
-}
-
-.hypotenuse{
-  padding: 1rem 0.8rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 0.8rem;
-}
-
-.area{
-  padding: 1rem 0.8rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 0.8rem;
+.question-container{
+  display: block;
+  text-align: center;
 }
 
 .clear{
@@ -149,21 +83,31 @@ input:focus{
   border-radius: 0.8rem;
 }
 
-p{
+.submit{
+  padding: 1rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 0.8rem;
+}
+
+.button{
+  padding-bottom: 1rem;
   margin: auto;
+  padding-top: 2rem;
 }
-
-.error{
-  padding-top: 1.5rem;
-  color: var(--error-color);
-  font-style: italic;
-}
-
 .show{
+  margin: auto;
   padding-top: 1.5rem;
   color: var(--secondary-color);
   font-size: 1.2rem;
   font-weight: bold;
+}
+label{
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
 .footer{
@@ -196,23 +140,4 @@ p{
 }
 .name{
   color: var(--secondary-color);
-}
-
-.section{
-  font-size: 1.1rem;
-  padding:1rem;
-  margin: auto;
-  color: var(--secondary-color);
-  margin-top: 3.5rem;
-  background-color: var(--primary-color);
-  border-radius: 0.9rem;
-  width: 70%;
-}
-
-.question-container{
-  /* display: block;
-  text-align: center; */
-  width: 85%;
-  margin: 1rem auto;
-  padding: 1rem 0;
 }

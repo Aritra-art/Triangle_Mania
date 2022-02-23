@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
   <title>Quiz</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./quiz.css">
 </head>
 <body>
   <nav class="nav-bar">
@@ -20,6 +20,89 @@
       <li class="nav-pill-items"> <a class="link " href="./area.html" target="_blank">Area</a></li>
     </ul>
   </nav>
+  <div class="container">
+    <h1 class="heading">Quiz on triangles</h1>
+    <h2 class="sub-heading">For each correct answer you will get 1 point</h2>
   
+
+    <form class="quiz-form">
+      <div class="question-container">
+        <p class="question">
+          What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?
+        </p>
+        <label><input type="radio" value="45°" name="question-one">45°</label>
+        <label><input type="radio" value="90°" name="question-one">90°</label>
+        <label><input type="radio" value="60°" name="question-one">60°</label>
+      </div>
+
+      <div class="question-container">
+        <p class="question">
+          What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?
+        </p>
+        <label><input type="radio" value="obtuse" name="question-two">obtuse</label>
+        <label><input type="radio" value="acute" name="question-two">acute</label>
+        <label><input type="radio" value="right-angled" name="question-two">right-angled</label>
+      </div>
+
+      <div class="question-container">
+        <p class="question">
+          A triangle can have
+        </p>
+        <label><input type="radio" value="one right angle" name="question-three">one right angle</label>
+        <label><input type="radio" value="two right angles" name="question-three">two right angles</label>
+      </div>
+
+    </form>
+  <span class="button">
+  <button class="submit">Submit</button>
+  <button class="clear">Clear</button>
+  </span>
+  <p class="show"></p>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-header">connect to me</p>
+    <ul class="footer-pills">
+    <li class="footer-items"><a class="footer-link" href="https://github.com/Aritra-art" target="_blank"><img src="./images/github.svg" ></a></li>
+    <li class="footer-items"><a href="https://twitter.com/Raj_chowdhury10" target="_blank"><img src="./images/twitter.svg" ></a></li>
+    <li class="footer-items"><a href="https://www.linkedin.com/in/aritra-chowdhury-b95a66227/" target="_blank"><img src="./images/linkedin.svg" ></a></li>
+    <li class="footer-items"><a href="https://t.me/Aritra_chowdhury" target="_blank"><img src="./images/telegram.svg" ></a></li>
+    </ul>
+    <p class="privacy">© 2022 | <a class="name"href="https://aritraportfolio.netlify.app/" target="_blank">aritrachowdhury</a></p>
+  </footer>
+
 </body>
+
+<script>
+  var quizForm = document.querySelector(".quiz-form");
+  var check = document.querySelector(".submit");
+  var clear = document.querySelector(".clear")
+  var show = document.querySelector(".show");
+
+  var correctAnswers = [
+    "90°",
+    "right-angled",
+    "one right angle"
+  ]
+
+  clear.addEventListener("click", clearEventHandler);
+  check.addEventListener("click", checkEventHandler);
+
+  function clearEventHandler(){
+    window.location.reload();
+  }
+
+  function checkEventHandler(){
+    var index = 0;
+    var score = 0;
+    var formResults = new FormData(quizForm);
+    for(var value of formResults.values()){
+      if(value === correctAnswers[index]){
+        score ++;
+      }
+      index++;
+    }
+    show.innerText = `Your Score is ${score}`
+  }
+</script>
 </html>
