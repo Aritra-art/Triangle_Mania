@@ -15,3 +15,6 @@
 - CSS3
 - Vanilla JavaScript
 
+>The Site is Deployed and is Hosted Succesfully 💖✨🎉
+>
+>[Triangle_Mania](https://tri-angle-check.netlify.app/).
