@@ -68,8 +68,10 @@ body{
 }
 
 .question-container{
+  padding-top: 2rem;
   display: block;
   text-align: center;
+  font-weight: bold;
 }
 
 .clear{
