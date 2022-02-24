@@ -6,7 +6,11 @@ var quizForm = document.querySelector(".quiz-form");
   var correctAnswers = [
     "90°",
     "right-angled",
-    "one right angle"
+    "one right angle",
+    "12, 16, 20",
+    "Equilateral Triangle",
+    "100°",
+    "30°"
   ]
 
   clear.addEventListener("click", clearEventHandler);
