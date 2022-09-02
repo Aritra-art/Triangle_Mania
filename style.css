@@ -137,6 +137,7 @@ input:focus {
 }
 
 .area {
+  cursor: pointer;
   padding: 1rem 0.8rem;
   font-size: 1.2rem;
   font-weight: bold;
@@ -144,6 +145,12 @@ input:focus {
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
   border-radius: 0.8rem;
+}
+
+.area:hover,
+.hypotenuse:hover,
+.is-triangle:hover {
+  background-color: whitesmoke;
 }
 
 .clear {
