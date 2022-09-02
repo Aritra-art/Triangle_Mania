@@ -9,23 +9,39 @@ var show = document.querySelector(".show");
 check.addEventListener("click", checkEventHandler);
 clear.addEventListener("click", clearEventHandler);
 
-function checkEventHandler(){
-  if(angle1.value!="" && angle2.value!="" && angle3.value!=""){
-    error.style.display = "none";
-    show.style.display = "block";
-    if(Number(angle1.value) + Number(angle2.value) + Number(angle3.value) === 180){
-      show.innerText = `Yayy, the Angles ${angle1.value}, ${angle2.value}, ${angle3.value} forms a Triangle 💖`;
-    }else{
-      show.innerText = "oh ho !! the Angles do not form a Triangle 💔"
+function checkEventHandler() {
+  if (angle1.value != "" && angle2.value != "" && angle3.value != "") {
+    if (
+      Number(angle1.value) > 0 &&
+      Number(angle2.value) > 0 &&
+      Number(angle3.value) > 0
+    ) {
+      error.style.display = "none";
+      show.style.display = "block";
+      if (
+        Number(angle1.value) + Number(angle2.value) + Number(angle3.value) ===
+        180
+      ) {
+        show.innerText = `Yayy, the Angles ${angle1.value}, ${angle2.value}, ${angle3.value} forms a Triangle 💖`;
+      } else {
+        show.innerText = "oh ho !! the Angles do not form a Triangle 💔";
+      }
+    } else {
+      error.style.display = "block";
+      show.style.display = "none";
+      error.textContent = "The angles of a Triangle should be Positive";
     }
-
-  }else{
+  } else {
     error.style.display = "block";
     show.style.display = "none";
-    error.innerText="Please enter all the angles of a Triangle"
+    error.innerText = "Please enter all the angles of a Triangle";
   }
 }
 
-function clearEventHandler(){
-  window.location.reload();
+function clearEventHandler() {
+  angle1.value = "";
+  angle2.value = "";
+  angle3.value = "";
+  show.style.display = "none";
+  error.style.display = "none";
 }

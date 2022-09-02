@@ -1,44 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
 
-:root{
-  --primary-color:#1d4ed8;
-  --secondary-color:#ea580c;
-  --error-color:#dc2626;
+:root {
+  --primary-color: #1d4ed8;
+  --secondary-color: #ea580c;
+  --error-color: #dc2626;
 }
 
-body{
+body {
   margin: 0rem;
   font-family: 'Offside', cursive;
 }
 
-.nav-bar{
-  
+.nav-bar {
+
   width: 100%;
   height: 17vh;
   background-color: var(--primary-color);
   border-bottom-left-radius: 1rem;
 }
-.nav-pills{
+
+.nav-pills {
   list-style: none;
   text-align: right;
 }
-.nav-pill-items{
+
+.nav-pill-items {
   font-size: 1.1rem;
-  display:inline;
+  display: inline;
   font-weight: bold;
   padding: 0rem 0.8rem 1rem 0rem;
 }
-.link{
+
+.link {
   padding: 0rem 1rem 1rem 0rem;
   color: var(--secondary-color);
   text-decoration: none;
 }
-.link-active{
+
+.link-active {
   text-decoration: underline;
-  font-size : 1.2rem
+  font-size: 1.2rem
 }
 
-.nav-heading{
+.nav-heading {
   text-decoration: none;
   font-size: 1.5rem;
   padding: 1.5rem;
@@ -47,32 +51,34 @@ body{
   color: var(--secondary-color);
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.heading{
+.heading {
   margin: auto;
   padding-top: 2rem;
   color: var(--secondary-color);
   font-size: 2.8rem;
   padding-bottom: 1rem;
 }
-.sub-heading{
+
+.sub-heading {
   margin: auto;
   color: var(--secondary-color);
   font-size: 1.3rem;
   padding-bottom: 1rem;
 }
 
-.name-heading{
+.name-heading {
   margin: auto;
   padding: 1rem;
   color: var(--secondary-color);
 }
-.heading-hypotenuse{
+
+.heading-hypotenuse {
   margin: auto;
   padding-top: 2rem;
   color: var(--secondary-color);
@@ -80,16 +86,16 @@ body{
   padding-bottom: 1rem;
 }
 
-label{
+label {
   margin: auto;
-  padding: 1.2rem ;
+  padding: 1.2rem;
   padding-top: 2rem;
   color: var(--secondary-color);
   font-weight: bold;
   font-size: 1.4rem;
 }
 
-input{
+input {
   padding: 12px 20px;
   margin: auto;
   width: 70%;
@@ -98,17 +104,39 @@ input{
   border: 2px solid var(--primary-color);
 }
 
-input:focus{
+input:focus {
   outline: 1px solid var(--primary-color);
 }
 
-.button{
+.button {
   padding-bottom: 1rem;
   margin: auto;
   padding-top: 2rem;
 }
 
-.is-triangle{
+.is-triangle {
+  padding: 1rem 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 0.8rem;
+}
+
+.hypotenuse {
+  padding: 1rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.area {
   padding: 1rem 0.8rem;
   font-size: 1.2rem;
   font-weight: bold;
@@ -118,27 +146,8 @@ input:focus{
   border-radius: 0.8rem;
 }
 
-.hypotenuse{
-  padding: 1rem 0.8rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 0.8rem;
-}
-
-.area{
-  padding: 1rem 0.8rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 0.8rem;
-}
-
-.clear{
+.clear {
+  cursor: pointer;
   margin-left: 2rem;
   padding: 1rem 0.8rem;
   font-size: 1.2rem;
@@ -149,24 +158,24 @@ input:focus{
   border-radius: 0.8rem;
 }
 
-p{
+p {
   margin: auto;
 }
 
-.error{
+.error {
   padding-top: 1.5rem;
   color: var(--error-color);
   font-style: italic;
 }
 
-.show{
+.show {
   padding-top: 1.5rem;
   color: var(--secondary-color);
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.footer{
+.footer {
   margin-top: 9rem;
   margin-right: 3rem;
   width: 100%;
@@ -174,33 +183,37 @@ p{
   background-color: var(--primary-color);
   border-top-right-radius: 1rem;
 }
-.footer-header{
+
+.footer-header {
   text-align: center;
-  padding: 1.5rem 0rem 0rem ;
+  padding: 1.5rem 0rem 0rem;
   font-weight: bolder;
   font-size: 1.5rem;
   color: var(--secondary-color);
 }
 
-.footer-pills{
+.footer-pills {
   list-style: none;
   text-align: center;
 }
-.footer-items{
+
+.footer-items {
   display: inline;
   padding: 0rem 2.6rem 0rem 0rem;
 }
-.privacy{
+
+.privacy {
   text-align: center;
   color: var(--secondary-color);
 }
-.name{
+
+.name {
   color: var(--secondary-color);
 }
 
-.section{
+.section {
   font-size: 1.1rem;
-  padding:1rem;
+  padding: 2rem;
   margin: auto;
   color: var(--secondary-color);
   margin-top: 3.5rem;
@@ -209,7 +222,7 @@ p{
   width: 70%;
 }
 
-.question-container{
+.question-container {
   /* display: block;
   text-align: center; */
   width: 85%;
