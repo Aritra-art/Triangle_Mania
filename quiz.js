@@ -1,6 +1,6 @@
 var quizForm = document.querySelector(".quiz-form");
 var check = document.querySelector(".submit");
-var clear = document.querySelector(".clear");
+
 var show = document.querySelector(".show");
 
 var correctAnswers = [
@@ -13,12 +13,7 @@ var correctAnswers = [
   "30°",
 ];
 
-clear.addEventListener("click", clearEventHandler);
 check.addEventListener("click", checkEventHandler);
-
-function clearEventHandler() {
-  show.textContent = "";
-}
 
 function checkEventHandler() {
   var index = 0;
